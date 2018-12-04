@@ -1,7 +1,7 @@
 * {
-	font-family: 'Roboto Condensed', sans-serif;
-	text-align: center; 
+	font-family: 'Roboto Condensed', sans-serif; 
 	box-sizing: border-box;
+	color: white;
 }
 
 
@@ -44,7 +44,11 @@ body {
 
 
 
-			
+.images	{
+	width: 40px;
+	height: 60px;
+	color: white;
+}	
 
 .slideshow {
 	width: 100%;
@@ -71,6 +75,10 @@ body {
 	text-align: right;
 }
 
+#About {
+	margin-left: 50px;
+	color: white;
+}
 
  .mainNav .icon {
 			 	display: none;
