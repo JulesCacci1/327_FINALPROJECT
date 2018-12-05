@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+	<link rel="stylesheet" href="css/galeria.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    	<title>Galeria de la Raza</title>  
+
+    
+  </head>
+
+  <body> 		
+		
+
+    <div class="title"> <img src="images/galeria.png" style=" width: 610px; height: 100px;"></img> 
+    	 <div>
+    <nav class="mainNav" id="responsiveNav">
+    	 
+
+    		<a href="#">DONATE</a>
+    		<a href="#">SHOP</a>
+    		<a href="#">EXHIBITIONS</a>
+    		<a href="Events.html">EVENTS</a>
+			 <a href="About.html">ABOUT</a>
+			
+		
+			
+			
+			<a href="javascript:void(0);" style="font-size: 20px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</nav>
+
+
+  	   <div class="w3-button w3-black w3-display-container">
+  <img class="slides" src="images/SS_1.jpg">
+  <img class="slides" src="images/SS_2.jpg">
+  <img class="slides" src="images/SS_3.jpg">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+  	<br>
+  	<br>
+  	<br>
+	<div class="leftmenu"> ABOUT <br> EVENTS <br> EXHIBITIONS </div>
+
+	<div class="rightmenu"> SHOP <br> CONTACT <br> YOUTH/GET INVOLVED<br> DONATE </div>
+
+
+<script>
+
+function myFunction() {
+var x = document.getElementById("responsiveNav");
+if (x.className === "mainNav") {
+x.className += " responsive";
+} else {
+x.className = "mainNav";
+}
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+showDivs(slideIndex += n);
+}
+
+
+function showDivs(n) {
+
+  var i;
+  var x = document.getElementsByClassName("slideshow");
+
+  if (n > x.length){slideIndex = 1}
+    if (n < 1) {slideIndex = x.length};
+
+  for (i = 0; i < x.length; i++){
+
+    x[i].style.display = "none";
+  } 
+  x[slideIndex-1].style.display = "block";
+
+}
+
+</script>
+
+  </body>
+</html>
