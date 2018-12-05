@@ -11,35 +11,47 @@ body {
 	margin: 0 auto;
 	background-color: black;
 }
-
-.title {
+header {
 	background-color: #bc2d37;
-	height: 160px;
-	position: relative;
-	z-index: 1;
+	padding: 20px;
+	width: 100%;
+
 }
 
+.title {
+	width: 50%;
+	position: relative;
+	z-index: 150;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	margin-top: 25px;
+
+}
 
 .mainNav {
-				background-color: #bc2d37;
 				position: fixed;
 				top: 0;
-				padding-top: 90px;
-
+				/*padding-top: 87px;*/
 				width: 100%;
 				z-index: 100;
 				text-align: center;
+				background-color: #bc2d37;
+				padding: 20px;
+				
 			}
 
 .mainNav a { 
-				font-size: 20px;
-			
+				font-size: 24px;
 				color: white;
 				padding: 20px;
 				text-decoration: none; 
 				display: inline-block;
 				float: right;
-				background-color: #bc2d37;
+				
 			 }
 
 
@@ -62,8 +74,7 @@ body {
 	font-size: 15pt;
 	color: white;
 	float: left;
-	margin-left: 20px;
-	margin-top: 25px;
+	margin: 20px;
 	text-align: left;
 }
 
@@ -83,12 +94,12 @@ body {
  .mainNav .icon {
 			 	display: none;
 			 }
-			 @media screen and (max-width:600px) {
+			 @media screen and (max-width:1200px) {
 			 	.mainNav a {display: none;}
 			 	.mainNav a.icon {float:right; display:block;}
 			 }
 
-			 @media screen and (max-width: 600px) {
+			 @media screen and (max-width: 1200px) {
 			 	.mainNav.responsive {position: relative;}
 			 	.mainNav.responsive .icon {
 			 		position: absolute;
