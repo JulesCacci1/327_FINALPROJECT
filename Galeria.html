@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  <link rel="stylesheet" href="css1/galeria.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+      <title>Galeria de la Raza</title>  
+
+    
+  </head>
+
+  <body>
+
+  <header>  
+    <div class="title"> <img src="images/galeria.png">
+       </div>
+    
+      <nav class="mainNav" id="responsiveNav">
+
+        <a href="history.html">DONATE</a>
+        <a href="#">SHOP</a>
+        <a href="#">EXHIBITIONS</a>
+        <a href="Events.html">EVENTS</a>
+      <a href="About.html">ABOUT</a>
+
+      <a href="javascript:void(0);" style="font-size: 20px;" class="icon" onclick="hamburgerMenuHandler()">&#9776;</a>
+    </nav>
+  </header>
+
+ 
+   <div class="heroImage"></div>
+
+
+    
+    <div class="line"></div>
+
+    <div id="Donate"></div>
+
+
+  <div class="leftmenu"> <h2> CONTACT INFORMATION </h2> <p>
+  Address: 1990 Folsom St, San Francisco, CA 94103 </p>
+Phone: (415) 826-8009</div>
+
+
+<script>
+function hamburgerMenuHandler() {
+var hamburgerMenu = document.getElementById("responsiveNav");
+if (hamburgerMenu.className === "mainNav") {
+hamburgerMenu.className += " responsive";
+} else {
+hamburgerMenu.className = "mainNav";
+}
+}
+</script>
+
+  </body>
+</html>

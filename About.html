@@ -7,26 +7,63 @@
 </head>
 
 <body>
+
 		<main>
 
 			<header>
 
-			<a href="GaleriadelaRaza.html" div class="title"> <img src="images/galeria.png" width="500"></img></a>
+					<div class="title"> <a href="GaleriadelaRaza.html"> <img src ="images/galeria.png" class="logo"></div></a>
+    	 			</div>
+					<nav class="mainNav" id="responsiveNav">
+
+    		<a href="#">DONATE</a>
+    		<a href="#">SHOP</a>
+    		<a href="#">EXHIBITIONS</a>
+    		<a href="Events.html">EVENTS</a>
+			<a href="About.html">ABOUT</a>
+
+			<a href="javascript:void(0);" style="font-size: 20px;" class="icon" onclick="myFunction()">&#9776;</a>
+					</nav>
 
 			</header>
 
+			<div class="mural"> <img src="images/Mural.jpg" width="100%;"> </img>
+					
+			</div>
+
 			<div class="About">
-					<br>
-					<br>
+
 			<h1> MISSION </h1>
 
 		Founded in 1970, the Galería is a non-profit community-based arts organization whose mission is to foster public awareness and appreciation of Chicano/Latino art and serve as a laboratory where artists can both explore contemporary issues in art, culture and civic society, and advance intercultural dialogue. To implement our mission, the Galería supports Latino artists in the visual, literary, media and performing art fields whose works explore new aesthetic possibilities for socially committed art. 
+					</div>
 
-				</p>
+		<div class="bottommenu">
+
+			<div class="rightmenu"> 
+				<p>TWITTER</p> <p>FACEBOOK</p> <p>FLICKER</p>
 			</div>
+			
+			<div class="rightmenu">
+					<p>CONTACT</p> <p>OPPORTUNITIES</p> <p>PROJECTS/PARTNERSHIPS</p>   			
+			</div>	
+					    	
+		<div>
 
-		</main>
+
 	</main>
+
+
+	<script>
+function myFunction() {
+var x = document.getElementById("responsiveNav");
+if (x.className === "mainNav") {
+x.className += " responsive";
+} else {
+x.className = "mainNav";
+}
+}
+</script>
 
 </body>
 
