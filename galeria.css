@@ -78,6 +78,78 @@ h3 {
 
 }
 
+
+.OpportunitiesPage {
+	width: 100%;
+	background: no-repeat url("../images/SS_2.jpg") center center fixed;
+	background-size: cover;
+	min-height: 600px;
+
+
+}
+
+
+.Opportunities {
+	margin: 5px;
+	color: white;
+	font-size: 20pt;
+	opacity: 1;
+	
+}
+
+
+.OpportunitiesList {
+	display: inline-flex;
+	list-style: none;
+
+	li h2 {
+		padding: 0px;
+	}
+
+
+}
+.Opportunities h2 {
+		padding: 10px;
+	
+
+
+}
+
+
+.ProjectsPage {
+	width: 100%;
+	background: no-repeat url("../images/Youth.png") center center fixed;
+	background-size: cover;
+	min-height: 600px;
+
+
+}
+
+.Projects {
+	margin: 5px;
+	color: white;
+	font-size: 20pt;
+	opacity: 1;
+	
+}
+
+.ProjectsText {
+	margin: 50px;
+}
+
+
+.InternshipsContent {
+	margin: 5px 100px 5px 100px;
+
+}
+
+.VolunteerContent {
+	margin: 5px 100px 5px 100px;
+
+}
+
+
+
 .bg1 {
 	opacity: .3;
 
@@ -93,36 +165,69 @@ h3 {
 
 .Shop {
 	font-size: 20px;
+	padding: 20px;
 }
+
+.Events {
+	font-size: 20px;
+	padding: 20px;
+}
+
 
 .prints {
 	padding: 30px;
 	margin: 0 auto;
 	width: 100%;
-	background-color: pink;
 	float: left;
 }
 
 .prints1 {
 	width: 50%;
 	float: left;
-	background-color: blue;
 }
 
 .prints1 img {
 	width: 50%;
 }
 
+.Events1 {
+	padding: 30px;
+	margin: 0 auto;
+	width: 100%;
+	float: left;
+
+}
+
+.Events2 {
+	width: 50%;
+	float: left;
+
+}
+
+.details {
+	width: 50%;
+	float: left;
+	padding: 20px;
+	font-size: 20px;
+}
+
 
 .captions {
 	width: 50%;
 	float: left;
-	background-color: tomato;
 	padding: 20px;
+	font-size: 20px;
 }
 
 
-@media screen and (max-width: 1200px) {
+.caption {
+	width: 100%;
+	font-size: 20px;
+	float: none;
+	padding: 30px;
+}
+
+@media screen and (max-width: 700px) {
 	.prints1, .captions {
 		width: 100%;
 		float: none;
@@ -148,10 +253,6 @@ h3 {
       }
 }
 
-.description {
-	padding: 30px;
-	font-size: 40px;
-}
 
 
 
@@ -317,24 +418,26 @@ hr {
 
 
 
- .mainNav .icon {
+.mainNav .icon {
 			 	display: none;
 			 }
-			 @media screen and (max-width:1250px) {
-			 	.mainNav a {display: none;}
-			 	.mainNav a.icon {float:right; display:block;}
-			 }
 
-			 @media screen and (max-width: 1200px) {
-			 	.mainNav.responsive {position: relative;}
-			 	.mainNav.responsive .icon {
-			 		position: absolute;
-			 		right: 0;
-			 		top: 0;
-			 	}
 
-			 	.mainNav.responsive a {
-			 		float: none;
-			 		display: block;
-			 		text-align: right;
-			 	}
+@media screen and (max-width:1250px) {
+ 	.mainNav a {display: none;}
+ 	.mainNav a.icon {float:right; display:block;}
+ }
+
+@media screen and (max-width: 1200px) {
+ 	.mainNav.responsive {position: relative;}
+ 	.mainNav.responsive .icon {
+ 		position: absolute;
+ 		right: 0;
+ 		top: 0;
+}
+
+.mainNav.responsive a {
+	float: none;
+	display: block;
+	text-align: right;
+}
